@@ -1,15 +1,15 @@
-import { render, screen, waitFor } from "@testing-library/react";
-import { vi, describe, it, expect } from "vitest";
+// import { render, screen, waitFor } from "@testing-library/react";
+// import { vi, describe, it, expect } from "vitest";
 
-globalThis.fetch = vi.fn(() =>
-  Promise.resolve({
-    json: () => Promise.resolve([
-      { id: 1, username: "Alpha" },
-      { id: 2, username: "Bravo" },
-      { id: 3, username: "Charlie" }
-    ])
-  })
-) as unknown as typeof fetch;
+// globalThis.fetch = vi.fn(() =>
+//   Promise.resolve({
+//     json: () => Promise.resolve([
+//       { id: 1, username: "Alpha" },
+//       { id: 2, username: "Bravo" },
+//       { id: 3, username: "Charlie" }
+//     ])
+//   })
+// ) as unknown as typeof fetch;
 
 // describe("Leaderboard", () => {
 //   it("renders loading and then a list", async () => {
